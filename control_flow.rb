@@ -1,9 +1,23 @@
 def admin_login(username, password)
-  # your code here
+  if username === "ADMIN" && password === "12345"
+    "Access granted"
+  else 
+    "Access denied"
+  end
 end
 
 def hows_the_weather(temperature)
-  # your code here
+  case temperature
+    when temperature < 40
+    "It's brisk out there!"
+    when temperature >= 40 && <= 60
+    "It's a little chilly out here!"
+    when temperature > 85
+    "It's too dang hot out there!"
+    else 
+    "It's perfect out there!"
+    end
+
 end
 
 def fizzbuzz(num)

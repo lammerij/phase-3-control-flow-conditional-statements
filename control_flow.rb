@@ -20,12 +20,12 @@ def hows_the_weather(temperature)
 end
 
 def fizzbuzz(num)
-  if num % 3 == 0
-    "Fizz"
+  if  num % 3 == 0  && num % 5 == 0
+    "FizzBuzz"
   elsif num % 5 == 0
     "Buzz"
-  elsif num % 3 == 0 && num % 5 == 0
-    "FizzBuzz"
+  elsif num % 3 == 0
+    "Fizz"
   else
     num
   end
@@ -40,10 +40,9 @@ def calculator(operation, num1, num2)
     num1 * num2
   elsif operation == "/"
     num1 / num2
-  elsif operation == 
-    "Invalid operation!"
   else
-    nil 
- end
+    puts "Invalid operation!"
+    nil
+  end
 end
 
